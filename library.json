@@ -1,0 +1,37 @@
+{
+    "name": "espmole-backend-mqtt",
+    "version": "0.1.0",
+    "description": "MQTT transport backend for ESPMole - enables remote command/response via MQTT",
+    "keywords": [
+        "espmole",
+        "mqtt",
+        "transport",
+        "backend",
+        "embedded",
+        "arduino",
+        "iot"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karol-brejna-i/espmole-backend-mqtt.git"
+    },
+    "authors": [
+        {
+            "name": "Karol Brejna"
+        }
+    ],
+    "license": "Apache-2.0",
+    "frameworks": "arduino",
+    "platforms": ["espressif32", "espressif8266"],
+    "dependencies": {
+        "espmole-core": "*",
+        "marvinroger/AsyncMqttClient": "^0.9.0"
+    },
+    "build": {
+        "srcDir": "src",
+        "includeDir": "src",
+        "flags": [
+            "-std=c++11"
+        ]
+    }
+}
